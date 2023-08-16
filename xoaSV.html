@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FINGERPRINT-HUS-VNU</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="giaodien.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                                  
+  <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script> 
+</head>
+<body onload="time(), myFunction()">
+ <!--  phần logo -->
+  <div id="loader"></div>
+   <div id="myDiv" class="animate-bottom">
+  <div class = "jumbotron jumbotron-fluid header">
+    <div class="tieude">
+      <h3>PHY-HUS-VNU</h3>
+      <h4>TIN HỌC VẬT LÝ</h4></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/vantay_logo.webp" style="width: 70%;border-radius: 100px;">
+        </div>
+        <div class="col-md-9">
+          <img src="images/Logo_HUS_Final-01.png" class="logo">
+        </div>
+      </div>
+    </div>
+  </div>
+ <!--  phần menu -->
+  <div class="container">
+    <div class="row">
+      <div class="container menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">MENU</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./GiaodienChinh.html">Trang chủ<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./themSinhvien.html">Thêm sinh viên</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="./xoaSinhvien.html"style="background-color:rgb(125, 135, 144); border-radius: 50px;">Xóa sinh viên</a>
+              </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="./tracuuSinhvien.html">Tra cứu</a>
+              </li>
+              <!-- <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./trangchu.html">Trang chủ</a>
+                  <a class="dropdown-item" href="./add_nhanvien.html">Thêm nhân viên</a>
+                  <a class="dropdown-item" href="./del_nhanvien.html">Xóa nhân viên</a>
+                  <a class="dropdown-item" href="./tracuu_nhanvien.html">Tra cứu</a>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <span class="time" id="hours">Giờ</span>
+      <span id="minutes" class="time">:Phút:</span>
+      <span id="seconds" class="time">Giây</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <h2>Nhập ID Can Xoa<input type="text" id="Xoa_ID" value="" style="width: 40%;"></h2>
+      <button onclick="xoaid()">Xoa ID</button>
+      <p id="test"></p>
+    </div>
+  </div>
+</div>
+<script src="Finger_ID.js"></script>
+<script src="firebase.js"></script>
+</body >
+</html>

@@ -1,0 +1,22 @@
+body {
+    background-image: url(images/IOT_backgroud_2.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+   .logo{
+     width: 45%; 
+     display: block;
+     margin-left: 100px;
+     margin-right: auto;
+ }
+ .tieude{
+ 
+     margin-left: 185px;
+ }
+ .header {
+     background-color: rgb(200, 210, 219);
+     height: 250px;
+     padding-top: 10px !important; 
+     padding-bottom: 10px !important; 
+ }
